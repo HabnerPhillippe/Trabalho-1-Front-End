@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="../../public/styles/reset.css" /> -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/content.css" />
+
+    <title>Estrutura Básica Html</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navigation">
+        <div class="wrapper">
+          <a href="./Index.html" class="logo">
+            <p>👨‍💻 Habner <span>blog</span></p>
+          </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="./Index.html">Início</a></li>
+            <li>
+              <a href="https://github.com/HabnerPhillippe" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="explicacao">
+
+          <h1> 🔹 Estrutura básica de uma página HTML</h1>
+          <p>
+            A estrutura básica de uma página HTML pode ser vista na Listagem 1, na qual podemos ver as principais tags que são necessárias para que o documento seja corretamente interpretado pelos browsers.
+            <br>
+            <br>
+            <img src="/IMG/Sem título.png" alt="Estrutura básica de uma página HTML">
+            <br>
+            Listagem 1. Estrutura básica de uma página HTML
+            <br>
+            <br>
+            ◾ Linha 1: a instrução DOCTYPE deve ser sempre a primeira a aparecer em uma página HTML para indicar ao browser qual versão da linguagem usada. Nesse caso, estamos trabalhando com a HTML5, versão na qual a declaração do DOCTYPE é bastante simples, como podemos ver na listagem;
+            <br>
+            ◾ Linhas 2 e 10: abertura e fechamento da tag html, que delimita o documento. Sendo assim, todas as demais tags da página devem estar nesse espaço;
+            <br>
+            ◾ Linhas 3 e 6: abertura e fechamento da tag head, que define o cabeçalho do documento. O conteúdo nesse espaço não é visível no browser, mas contém instruções sobre seu conteúdo e comportamento. Dentro dessa tag, por exemplo, podem ser inseridas folhas de estilo e scripts;
+            <br>
+            ◾ Linha 4: a tag meta, nesse caso, especifica qual conjunto de caracteres (character set ou charset) será usado para renderizar o texto da página. O UTF-8 contém todos os caracteres dos padrões Unicode e ASCII, sendo, portanto, o mais utilizado em páginas web. A mesma tag meta, porém com outros atributos, pode ser utilizada para outros fins, como na SEO (Search Engine Optimization);
+            <br>
+            ◾ Linha 5: a tag title define o título da página, aquele que aparece na janela/aba do navegador;
+            <br>
+            ◾ Linhas 7 e 9: abertura e fechamento da tag body, marcando o espaço no qual deve estar contido o conteúdo visual da página. As demais tags que representam texto, botões etc. devem ser adicionadas nesse intervalo;
+            <br>    
+            ◾ Linha 8: nessa linha podemos observar a sintaxe para adição de comentários em HTML. Esse trecho não é renderizado pelo browser.
+            <br>
+            <br>
+            Para desenvolver páginas com HTML basicamente precisamos de um editor de texto, como o Bloco de Notas do Windows, Nano e Emacs no Linux, entre vários outros. Há, ainda, editores com opções avançadas, como recursos de syntax hilghligt e autocomplete, como Sublime Text, Atom, Brackets e Visual Studio Code, que podem ser usados para editar documentos HTML.
+            <br>
+            <br>
+            Independentemente do editor utilizado, podemos simplesmente copiar o código da Listagem 1 para um deles e salvar o arquivo com extensão .html. Em seguida, podemos abrir esse arquivo em um browser.
+          </p>
+
+          <h1> 🔹 Tags do HTML</h1>
+          <p>
+            Um documento HTML é composto por tags, as quais possuem um nome e aparecem entre os sinais < e >, como vimos na Listagem 1, por exemplo, em *html>* e -head-. Naquele exemplo também vimos que algumas tags precisam ser abertas e fechadas, como em -body- */body>. Nesse caso, a tag de fechamento deve conter a barra / antes do nome. Outras, porém, não precisam ser fechadas, como a tag *meta>. Nesses casos, a adição da barra / no final da própria tag, como vemos na Linha 4 da Listagem 1 é opcional.
+            <br>
+            Outro aspecto importante da linguagem é que ela é case insensitive, ou seja, não leva em consideração a diferença entre letras maiúsculas e minúsculas. No entanto, o uso apenas de letras minúsculas tem sido utilizado como padrão pelos desenvolvedores.
+
+            Além dessas características, as tags também possuem atributos, como vemos na Linha 4 da Listagem 1, na qual a tag meta possui o atributo charset=”UTF-8”. Essas propriedades definem algumas características adicionais de cada tag e em alguns casos são obrigatórias. Seus valores devem aparecer entre aspas duplas, como no exemplo acima, ou em aspas simples, caso o próprio valor contenha aspas duplas.
+          </p>
+
+          <h1> 🔹 Cabeçalhos do HTML</h1>
+          <p>Cabeçalhos são normalmente utilizados para identificar páginas e seções e possuem aparência diferenciada do restante do texto. No HTML há seis níveis de cabeçalhos/títulos que podem ser utilizados por meio das tags h1, h2, h3, h4, h5 e h6, sendo h1 o maior/mais relevante e h6 o menor/menos relevante.
+            <br>
+          Na Listagem 2 podemos ver como utilizar essas tags, e na Figura 1 temos o resultado desse código. Para testar esse código, basta copiá-lo para o espaço indicado na Linha 8 da Listagem 1 e salvar o documento com a extensão .html.
+          <br>
+          <br>
+          <img src="/IMG/Sem título2.png" alt="Diferentes níveis de cabeçalho">
+          <br>
+            Listagem 2. Diferentes níveis de cabeçalho
+            <br>
+            <br>
+          </p>
+
+
+          <h1> 🔹 Parágrafos no HTML</h1>
+          <p>Parágrafos de texto são gerados na HTML por meio das tags <p> </p>. Esse é um exemplo de tag cuja disposição na tela se dá em forma de bloco, ou seja, um parágrafo é posto sempre abaixo do outro.
+          <br>
+          <br>
+          <img src="/IMG/Sem título3.png" alt="Adicionando parágrafos">
+          <br>
+            Listagem 3. Adicionando parágrafos
+            <br>
+            <br>
+          </p>
+
+          <h1> 🔹 Imagens no HTML</h1>
+          <p>
+            A inserção de imagens em uma página HTML pode ser feita por meio da tag img, que recebe no atributo src o endereço do arquivo a ser carregado. Além desse, outros dois atributos importantes são o alt, que indica um texto alternativo que será exibido caso o arquivo não possa ser carregado, e title, que indica o texto que aparecerá como tooltip ao passar o mouse sobre a figura.
+            <br>
+            O código da Listagem 4 insere uma imagem a partir do arquivo avatar.png, localizado na mesma pasta do arquivo HTML, e uma tag img apontando para um arquivo inexistente.
+            <br>
+          <br>
+          <img src="/IMG/Sem título4.png" alt="Inserindo imagem">
+          <br>
+            Listagem 4. Inserindo imagem
+            <br>
+            <br>
+            No caso da tag img, ainda temos as tags figure e figcaption que serão abordadas no tópico de HTML Semântico, porém, a sua estrutura é simples e é representada pelo código abaixo:
+            <br>
+            <img src="/IMG/Sem título4.1.png" alt="Imagem com legenda">
+            <br>
+            Listagem 4.1. Imagem com legenda
+            <br>
+            <br>
+          </p>
+
+          <h1>Links no HTML:</h1>
+          <p>
+            Links são normalmente utilizados para direcionar o usuário para outras páginas, ou para outras partes da mesma página. Nos dois casos, utilizamos a tag a, que possui o atributo href no qual indicamos o destino daquele link.
+            <br>
+            A Listagem 5 mostra como adicionar um link para outra página, neste caso, indicada pelo arquivo pagina2.html.
+            <br>
+          <br>
+          <img src="/IMG/Sem título5.png" alt="Inserindo link">
+          <br>
+            Listagem 5. Inserindo link
+            <br>
+          </p>
+        </div>
+      </section>
+      <div class="content">
+        </div>
+    </main>
+  </body>
+</html>

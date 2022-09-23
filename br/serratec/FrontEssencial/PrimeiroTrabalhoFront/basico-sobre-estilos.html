@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="../../public/styles/reset.css" /> -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/content.css" />
+
+    <title>Básico Sobre Estilos</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navigation">
+        <div class="wrapper">
+          <a href="./Index.html" class="logo">
+            <p>👨‍💻 Habner <span>blog</span></p>
+          </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="./Index.html">Início</a></li>
+            <li>
+              <a
+                href="https://github.com/HabnerPhillippe"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="content">
+          <div class="tipocss">
+            <hr>
+            <h1> 🔹 CSS básico</h1>
+            <p>
+                CSS (Folha de Estilo em Cascata) é o código que você usa para dar estilo à sua página Web. <em>CSS básico</em> apresenta tudo que você precisa para começar. Responderemos a perguntas do tipo: Como mudo meu texto para preto ou vermelho? Como faço para que meu conteúdo apareça em determinados lugares na tela? Como decoro minha página com imagens e cores de fundo?
+            </p>
+
+            <hr>
+            <h1> 🔹 Então o que realmente é CSS?</h1>
+            <p>
+                Cascading Style Sheets (CSS) é um mecanismo para adicionar estilo (cores, fontes, espaçamento, etc.) a um documento web.
+
+                O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos. Assim, quando se quiser alterar a aparência dos documentos vinculados a este arquivo CSS, basta modifica-lo.
+
+                Com a variação de atualizações dos navegadores, o suporte ao CSS pode variar. A interpretação dos navegadores pode ser avaliada com o teste Acid2, que se tornou uma forma base de revelar quão eficiente é o suporte de CSS, fazendo com que a nova versão em desenvolvimento do Firefox seja totalmente compatível a ele, assim como o Opera já é. O Doctype informado, ou a ausência dele, determina o quirks mode ou o strict mode, modificando o modo como o CSS é interpretado e a página desenhada.
+            </p>
+
+            <hr>
+            <h1> 🔹 Estilo Inline:</h1>
+            <p>
+                Estilo inline é quando os estilos CSS são aplicados diretamente dentro da tag de abertura de um elemento HTML. No entanto, este tipo de uso das CSS não é recomendado e encontra-se em desuso pelos desenvolvedores WEB.
+            </p>
+
+            <hr>
+            <h1> 🔹 Estilo Incorporado:</h1>
+            <p>
+                O estilo incorporado também não é o mais indicado e recomendado, uma vez que estilos escritos desta forma ficam restritos a um único documento, não sendo possível a sua reutilização em outras páginas do projeto WEB.
+                Neste método, você declara a folha de estilo diretamente dentro da seção head do documento HTML, utilizando o elemento style.O estilo incorporado também não é o mais indicado e recomendado, uma vez que estilos escritos desta forma ficam restritos a um único documento, não sendo possível a sua reutilização em outras páginas do projeto WEB.
+                Neste método, você declara a folha de estilo diretamente dentro da seção head do documento HTML, utilizando o elemento style.
+            </p>
+
+            <hr>
+            <h1> 🔹 Estilo Externo:</h1>
+            <p>
+                Este tipo de uso de CSS em documentos HTML é o mais indicado e recomendado. Neste tipo, os códigos CSS ficam em um documento externo ao documento HTML, separando assim as camadas de estrutura e apresentação do projeto WEB.
+                Existem duas formas de incorporar folhas de estilos CSS externa ao documento WEB.
+                <br>
+                <br>
+                Veja-as a seguir:
+            </p>
+
+            <h1> ◾ 1. Linkadas</h1>
+            <p>
+                Para o tipo de estilo CSS externo linkado, usa-se o elemento link para incorporar o documento CSS externo ao documento HTML. O elemento link deve ser usado dentro da seção head do documento HTML.
+                Veja a seguir um exemplo da utilização do elemento link para incorporar uma folha de estilo CSS ao documento HTML. Neste exemplo, imagine que o documento CSS esteja dentro de uma pasta chamada “css” e o seu arquivo HTML, “index.html” esteja na raiz. 
+
+                Partindo do princípio que o documento CSS esteja nomeado como “estilos.css” e que esteja dentro de uma pasta chamada “css”, o atributo href deve ficar exatamente com esta informação: “css/estilos.css”, que é a forma com que o navegador entenderár onde se encontra o arquivo CSS a ser linkado.
+            </p>
+
+            <h1> ◾ 2. Importadas</h1>
+            <p>
+                O tipo de estilo das CSS importadas funciona igualmente ao tipo de estilo das CSS linkadas. O que difere aqui é somente a forma com que isto é feito, uma vez que, neste caso, é usada a diretiva @import dentro do elemento style, na seção head do documento HTML.
+
+                Se o desenvolvedor pretende ganhar velocidade, não é recomendável o uso do estilo importadas, pois o @import demora mais para carregar a folha de estilo.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
